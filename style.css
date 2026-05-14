@@ -660,3 +660,259 @@ span {
     color: #aaa;
     border-top: 1px solid #e8e3fb;
 }
+/* ============================================
+   RESPONSIVE MEDIA QUERIES
+   ============================================ */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+
+    section,
+    .home,
+    .project-section,
+    .certifications,
+    .experience,
+    .contact {
+        padding: 50px 6%;
+    }
+
+    /* Nav */
+    .bubble-nav {
+        gap: 4px;
+        padding: 6px;
+    }
+
+    .bubble {
+        padding: 7px 13px;
+        font-size: 13px;
+    }
+
+    /* Hero: name → photo → body */
+    .home-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .home-content {
+        display: contents;
+    }
+
+    .home-name-block {
+        order: 1;
+        text-align: center;
+    }
+
+    .home-img {
+        order: 2;
+    }
+
+    .home-body-block {
+        order: 3;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-greeting {
+        font-size: 2rem;
+    }
+
+    .home-body-block h3 {
+        font-size: 1.8rem;
+    }
+
+    .home-intro {
+        max-width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .home-actions {
+        justify-content: center;
+    }
+
+    .home-img img {
+        width: 220px;
+        height: 300px;
+    }
+
+    /* About strip: vertical stack */
+    .home-about {
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 20px;
+    }
+
+    .home-about-divider {
+        width: 100%;
+        height: 1px;
+        align-self: auto;
+    }
+
+    /* Skills */
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .skills-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .skills-col {
+        padding: 0;
+    }
+
+    .skill-card {
+        width: 90px;
+    }
+
+    /* Projects */
+    .project-tabs {
+        gap: 10px;
+    }
+
+    .tab-btn {
+        font-size: 1.4rem;
+        padding: 0.7rem 0.9rem;
+    }
+
+    /* Certifications: 2 columns */
+    .cert-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Experience */
+    .ftic-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .feu-icon {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* Contact */
+    .contact-inner h2 {
+        font-size: 2.4rem;
+    }
+
+    .contact-inner p {
+        font-size: 1.4rem;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+
+    section,
+    .home,
+    .project-section,
+    .certifications,
+    .experience,
+    .contact {
+        padding: 40px 5%;
+    }
+
+    /* Nav: even smaller */
+    .bubble {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* Hero */
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-greeting {
+        font-size: 1.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .home-img img {
+        width: 180px;
+        height: 250px;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 0.9rem 1.8rem;
+    }
+
+    /* About strip */
+    .home-about-block h4 {
+        font-size: 1.3rem;
+    }
+
+    .home-about-block p {
+        font-size: 1.3rem;
+    }
+
+    /* Headings */
+    .heading {
+        font-size: 2.4rem;
+    }
+
+    /* Skills */
+    .skill-card {
+        width: 80px;
+        padding: 10px 8px;
+    }
+
+    /* Project cards */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-card p {
+        font-size: 1.3rem;
+    }
+
+    /* Certifications: single column on very small screens */
+    .cert-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .cert-box h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Experience */
+    .experience-desc {
+        font-size: 1.3rem;
+    }
+
+    .ftic-box,
+    .feu-box {
+        padding: 16px;
+    }
+
+    /* Contact */
+    .contact-inner h2 {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 1.1rem;
+        padding: 14px 5%;
+    }
+}
