@@ -334,7 +334,7 @@ span {
 
 .project-section {
     padding: 60px 25%;
-    background: #f8f8f8;
+    background: var(--snd-bg-color);
 }
 
 .project-title {
@@ -660,11 +660,10 @@ span {
     color: #aaa;
     border-top: 1px solid #e8e3fb;
 }
-/* ============================================
-   RESPONSIVE MEDIA QUERIES
-   ============================================ */
 
+/* RESPONSIVE MEDIA QUERIES  */
 /* Tablet (768px and below) */
+
 @media (max-width: 768px) {
 
     section,
@@ -794,6 +793,29 @@ span {
     .feu-icon {
         width: 140px;
         height: 140px;
+    }
+
+    .ftic-box .project-grid,
+    .feu-box .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        overflow: hidden;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-slider {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .project-slider img {
+        min-width: 100%;
+        max-width: 100%;
+        flex-shrink: 0;
     }
 
     /* Contact */
