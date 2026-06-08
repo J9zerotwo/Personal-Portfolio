@@ -391,6 +391,34 @@ span {
     transition: 0.3s;
 }
 
+.project-slider-debut {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-slider-debut img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 250px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    object-fit: contain;
+}
+
+.project-slider-debut img.active {
+    opacity: 1;
+}
+
 .project-card:hover {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 35px var(--main-color),
