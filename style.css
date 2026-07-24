@@ -514,7 +514,8 @@ span {
 
 .cert-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, minmax(220px, 260px));
+    justify-content: center;
     gap: 25px;
 }
 
@@ -804,7 +805,7 @@ span {
 
     /* Certifications: 2 columns */
     .cert-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
     }
 
     /* Experience */
@@ -930,10 +931,14 @@ span {
         font-size: 1.3rem;
     }
 
-    /* Certifications: single column on very small screens */
+    /* Certifications: keep 2 columns on small screens */
     .cert-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+
+    .cert-box {
+        padding: 8px;
     }
 
     .cert-box h3 {
